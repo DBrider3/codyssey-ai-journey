@@ -132,7 +132,6 @@ def show_menu():
     print("✖️ 곱셈: *")
     print("➗ 나눗셈: /")
     print("🔄 모든 계산 보기: all")
-    print("🔄 수식 입력 계산기: expr")
     print("🚪 종료: exit")
 
 
@@ -191,8 +190,6 @@ def main():
                         perform_calculation(num1, num2, choice)
                     elif choice == "all":
                         calculate_all(num1, num2)
-                    elif choice == "expr":
-                        expression_calculator()
                     elif choice == "exit":
                         print("\n👋 계산기를 종료합니다. 감사합니다!")
                         return
