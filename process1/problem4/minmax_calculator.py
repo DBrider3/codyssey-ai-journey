@@ -18,7 +18,7 @@ def main():
                 max_num = num
 
         print(f"Min: {min_num}, Max: {max_num}")
-    except ValueError:
+    except:
         print("Invalid input.")
         return
 
