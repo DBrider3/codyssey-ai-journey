@@ -1,9 +1,10 @@
 def main():
-    print("[*] Sort Calculator")
-    numbers = input("[*] Enter numbers: ")
-
     try:
+        print("[*] Sort Calculator")
+        numbers = input("[*] Enter numbers: ")
         numbers = [float(num) for num in numbers.split()]
+
+        blank_test = numbers[0]
 
         # Python 내장 함수 sorted(), sort() 사용 금지, 대신 버블 정렬 알고리즘 사용
         for i in range(len(numbers)):
@@ -17,7 +18,7 @@ def main():
             else:
                 print(f"{numbers[i]}", end=" ")
         print()
-    except ValueError:
+    except:
         print("Invalid input.")
         return
 
